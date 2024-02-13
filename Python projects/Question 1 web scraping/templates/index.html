@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <style>
+        h1 {
+            font-size: xx-large;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        html {
+                background-image: url('/static/pic.jpg');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                  }
+
+     p { font-size: x-large;
+        color:orange;
+        text-align: center;
+     }
+    a {
+        color:steelblue;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Data scrapper</h1>
+   <p><a href="{{url_for('scrape')}}">Click here to scrape data</a></p>
+</body>
+</html>

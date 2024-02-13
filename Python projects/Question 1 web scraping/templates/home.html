@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+
+
+<style>
+   html{
+    background-color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+
+
+
+
+   }
+
+h3 {
+
+    text-align: center;
+    color: black;
+    font-size:x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+</style>
+    
+</head>
+<body>
+    <h3> Scrapping python jobs and skills requirement from job website </h3>
+
+    <h2>Companies</h2>
+    {% for data in content %}
+        <p> {{data}}</p>
+
+    {% endfor %}
+    <h2>Skills required</h2>
+
+    {% for i in skill %}
+        <p>{{i}}</p>
+    {% endfor %}
+
+</body>
+</html>
